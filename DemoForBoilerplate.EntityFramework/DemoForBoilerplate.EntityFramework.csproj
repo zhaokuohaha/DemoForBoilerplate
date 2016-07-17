@@ -182,6 +182,10 @@
     <Compile Include="Migrations\201607170127393_NewPeople_20160717.Designer.cs">
       <DependentUpon>201607170127393_NewPeople_20160717.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607170708335_ChangDateTypeForId.cs" />
+    <Compile Include="Migrations\201607170708335_ChangDateTypeForId.Designer.cs">
+      <DependentUpon>201607170708335_ChangDateTypeForId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DemoForBoilerplateDataModule.cs" />
@@ -252,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607170127393_NewPeople_20160717.resx">
       <DependentUpon>201607170127393_NewPeople_20160717.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607170708335_ChangDateTypeForId.resx">
+      <DependentUpon>201607170708335_ChangDateTypeForId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

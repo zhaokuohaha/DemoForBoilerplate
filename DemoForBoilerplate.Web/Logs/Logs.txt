@@ -1985,3 +1985,407 @@ DEBUG 2016-07-16 10:07:30,378 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2016-07-16 10:07:30,410 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6b801d20-1ef7-44c0-ae74-c82569fc6d10
 DEBUG 2016-07-16 10:09:54,068 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
 DEBUG 2016-07-16 10:14:54,073 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-17 15:05:31,299 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-17 15:05:34,308 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-07-17 15:05:34,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,318 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,318 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,318 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,318 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateApplicationModule, DemoForBoilerplate.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateCoreModule, DemoForBoilerplate.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateDataModule, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,353 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Web.DemoForBoilerplateWebModule, DemoForBoilerplate.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,354 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Api.DemoForBoilerplateWebApiModule, DemoForBoilerplate.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:34,364 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-07-17 15:05:34,527 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-17 15:05:34,527 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-17 15:05:34,527 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-17 15:05:34,527 [1    ] o.Configuration.LanguageManagementConfig - Converted DemoForBoilerplate (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-17 15:05:37,558 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-17 15:05:37,683 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-17 15:05:37,813 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:05:39,199 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-17 15:05:39,215 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-17 15:05:39,217 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-17 15:05:39,237 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-17 15:05:39,240 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: DemoForBoilerplate
+DEBUG 2016-07-17 15:05:39,252 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-17 15:05:39,276 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-17 15:05:39,280 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Demo'.
+INFO  2016-07-17 15:05:39,281 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-17 15:05:39,281 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-17 15:05:39,281 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-17 15:05:39,281 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 10.
+INFO  2016-07-17 15:05:39,281 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-17 15:05:39,281 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-17 15:05:39,281 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-17 15:05:39,303 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-17 15:05:39,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-07-17 15:05:39,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-17 15:05:39,600 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-17 15:05:39,615 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-17 15:05:39,623 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-17 15:05:39,627 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-17 15:05:39,650 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-17 15:05:39,653 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-17 15:05:39,660 [e9bc8] Hangfire.Server.Worker                   - Background process 'Worker #9b4e9bc8' started.
+DEBUG 2016-07-17 15:05:39,674 [5ad41] Hangfire.Server.Worker                   - Background process 'Worker #ff85ad41' started.
+DEBUG 2016-07-17 15:05:39,688 [5d6ee] Hangfire.Server.Worker                   - Background process 'Worker #8f95d6ee' started.
+DEBUG 2016-07-17 15:05:39,691 [5ca2c] Hangfire.Server.Worker                   - Background process 'Worker #0625ca2c' started.
+INFO  2016-07-17 15:05:39,692 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2016-07-17 15:05:39,698 [43b9e] Hangfire.Server.Worker                   - Background process 'Worker #c0c43b9e' started.
+DEBUG 2016-07-17 15:05:39,707 [2ef99] Hangfire.Server.Worker                   - Background process 'Worker #9102ef99' started.
+DEBUG 2016-07-17 15:05:39,729 [ac57f] Hangfire.Server.Worker                   - Background process 'Worker #5b0ac57f' started.
+DEBUG 2016-07-17 15:05:39,746 [e3f60] Hangfire.Server.Worker                   - Background process 'Worker #701e3f60' started.
+DEBUG 2016-07-17 15:05:39,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-17 15:05:39,787 [5217c] Hangfire.Server.Worker                   - Background process 'Worker #e175217c' started.
+DEBUG 2016-07-17 15:05:39,795 [86ee8] Hangfire.Server.Worker                   - Background process 'Worker #11486ee8' started.
+DEBUG 2016-07-17 15:05:39,798 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.CreateUserInput
+DEBUG 2016-07-17 15:05:39,800 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-17 15:05:39,818 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-17 15:05:39,840 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-17 15:05:39,858 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.UserListDto
+DEBUG 2016-07-17 15:05:39,860 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MyPeople.Dtos.PersonDto
+DEBUG 2016-07-17 15:05:39,862 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-17 15:05:39,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-17 15:05:39,870 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-17 15:05:39,899 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-17 15:05:39,901 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-17 15:05:39,903 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-17 15:05:39,904 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-17 15:05:39,905 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MyPeople.IMyPersonAppService' with service name 'app/myPerson'.
+DEBUG 2016-07-17 15:05:39,909 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-17 15:05:39,925 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-17 15:05:39,932 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+ERROR 2016-07-17 15:05:44,140 [6    ] ilerplate.Web.Controllers.HomeController - ComponentActivator: could not instantiate DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'DemoForBoilerplateDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 126
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 72
+   在 DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext..ctor(String nameOrConnectionString) 位置 F:\cSharp\Boilerplate\DemoForBoilerplate\DemoForBoilerplate.EntityFramework\EntityFramework\DemoForBoilerplateDbContext.cs:行号 31
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 206
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 30
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 153
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 38
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.get_Context_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.get_Context()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.get_Table_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.get_Table()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.GetAll_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_GetAll_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.GetAll()
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.FirstOrDefault(TPrimaryKey id) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 99
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.FirstOrDefault_callback(Int32 id)
+   在 Castle.Proxies.Invocations.AbpRepositoryBase`2_FirstOrDefault_16.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.FirstOrDefault(Int32 id)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.Get(TPrimaryKey id) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 67
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Get_callback(Int32 id)
+   在 Castle.Proxies.Invocations.AbpRepositoryBase`2_Get_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Get(Int32 id)
+   在 Abp.MultiTenancy.TenantCache`2.GetTenant(Int32 tenantId) 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\MultiTenancy\TenantCache.cs:行号 60
+   在 Castle.Proxies.TenantCache`2Proxy.GetTenant_callback(Int32 tenantId)
+   在 Castle.Proxies.Invocations.TenantCache`2_GetTenant.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantCache`2Proxy.GetTenant(Int32 tenantId)
+   在 Abp.MultiTenancy.TenantCache`2.<>c__DisplayClass4_0.<Get>b__0() 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\MultiTenancy\TenantCache.cs:行号 37
+   在 Abp.Runtime.Caching.TypedCacheExtensions.<>c__DisplayClass0_0`2.<Get>b__0(TKey k) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Caching\TypedCacheExtensions.cs:行号 13
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass3_0`2.<Get>b__0(String k) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Caching\CacheExtensions.cs:行号 28
+   在 Abp.Runtime.Caching.CacheBase.Get(String key, Func`2 factory) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Caching\CacheBase.cs:行号 42
+   在 Abp.Runtime.Caching.CacheExtensions.Get[TKey,TValue](ICache cache, TKey key, Func`2 factory) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Caching\CacheExtensions.cs:行号 28
+   在 Abp.Runtime.Caching.TypedCacheWrapper`2.Get(TKey key, Func`2 factory) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Caching\TypedCacheWrapper.cs:行号 52
+   在 Abp.Runtime.Caching.TypedCacheExtensions.Get[TKey,TValue](ITypedCache`2 cache, TKey key, Func`1 factory) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Caching\TypedCacheExtensions.cs:行号 13
+   在 Abp.MultiTenancy.TenantCache`2.Get(Int32 tenantId) 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\MultiTenancy\TenantCache.cs:行号 31
+   在 Castle.Proxies.TenantCache`2Proxy.Get_callback(Int32 tenantId)
+   在 Castle.Proxies.Invocations.TenantCache`2_Get.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 29
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantCache`2Proxy.Get(Int32 tenantId)
+   在 Abp.Zero.EntityFramework.DbPerTenantConnectionStringResolver.GetNameOrConnectionString(DbPerTenantConnectionStringResolveArgs args) 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero.EntityFramework\Zero\EntityFramework\DbPerTenantConnectionStringResolver.cs:行号 51
+   在 Abp.Zero.EntityFramework.DbPerTenantConnectionStringResolver.GetNameOrConnectionString(ConnectionStringResolveArgs args) 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero.EntityFramework\Zero\EntityFramework\DbPerTenantConnectionStringResolver.cs:行号 46
+   在 Abp.Domain.Uow.UnitOfWorkBase.ResolveConnectionString(ConnectionStringResolveArgs args) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkBase.cs:行号 332
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 145
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 38
+   在 Castle.Proxies.EfRepositoryBase`3Proxy_11.get_Context_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Context_14.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`3Proxy_11.get_Context()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Castle.Proxies.EfRepositoryBase`3Proxy_11.get_Table_callback()
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_get_Table_14.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`3Proxy_11.get_Table()
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.InsertAsync(TEntity entity) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 80
+   在 Castle.Proxies.EfRepositoryBase`3Proxy_11.InsertAsync_callback(AuditLog entity)
+   在 Castle.Proxies.Invocations.EfRepositoryBase`3_InsertAsync_14.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 62
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`3Proxy_11.InsertAsync(AuditLog entity)
+   在 Abp.Auditing.AuditingStore.SaveAsync(AuditInfo auditInfo) 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\Auditing\AuditingStore.cs:行号 24
+   在 Abp.Auditing.AuditingStoreExtensions.<>c__DisplayClass0_0.<Save>b__0() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Auditing\AuditingStoreExtensions.cs:行号 17
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass3.<Run>b__1(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Auditing.AuditingStoreExtensions.Save(IAuditingStore auditingStore, AuditInfo auditInfo) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Auditing\AuditingStoreExtensions.cs:行号 17
+   在 Abp.Web.Mvc.Controllers.AbpController.HandleAuditingAfterAction(ActionExecutedContext filterContext) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Controllers\AbpController.cs:行号 466
+   在 Abp.Web.Mvc.Controllers.AbpController.OnActionExecuted(ActionExecutedContext filterContext) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.Web.Mvc\Web\Mvc\Controllers\AbpController.cs:行号 317
+   在 System.Web.Mvc.Controller.System.Web.Mvc.IActionFilter.OnActionExecuted(ActionExecutedContext filterContext)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-07-17 15:08:51,410 [29   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-17 15:08:51,412 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-07-17 15:08:51,412 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-07-17 15:08:51,412 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-07-17 15:08:51,412 [2ef99] Hangfire.Server.Worker                   - Background process 'Worker #9102ef99' stopped.
+DEBUG 2016-07-17 15:08:51,412 [5ad41] Hangfire.Server.Worker                   - Background process 'Worker #ff85ad41' stopped.
+DEBUG 2016-07-17 15:08:51,413 [43b9e] Hangfire.Server.Worker                   - Background process 'Worker #c0c43b9e' stopped.
+DEBUG 2016-07-17 15:08:51,413 [5d6ee] Hangfire.Server.Worker                   - Background process 'Worker #8f95d6ee' stopped.
+DEBUG 2016-07-17 15:08:51,413 [e3f60] Hangfire.Server.Worker                   - Background process 'Worker #701e3f60' stopped.
+DEBUG 2016-07-17 15:08:51,413 [ac57f] Hangfire.Server.Worker                   - Background process 'Worker #5b0ac57f' stopped.
+DEBUG 2016-07-17 15:08:51,414 [e9bc8] Hangfire.Server.Worker                   - Background process 'Worker #9b4e9bc8' stopped.
+DEBUG 2016-07-17 15:08:51,414 [5ca2c] Hangfire.Server.Worker                   - Background process 'Worker #0625ca2c' stopped.
+DEBUG 2016-07-17 15:08:51,414 [5217c] Hangfire.Server.Worker                   - Background process 'Worker #e175217c' stopped.
+DEBUG 2016-07-17 15:08:51,414 [86ee8] Hangfire.Server.Worker                   - Background process 'Worker #11486ee8' stopped.
+DEBUG 2016-07-17 15:08:51,414 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' stopped.
+DEBUG 2016-07-17 15:08:51,414 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' stopped.
+DEBUG 2016-07-17 15:08:51,414 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-07-17 15:08:51,425 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-07-17 15:08:51,425 [29   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-07-17 15:08:51,426 [29   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-07-17 15:09:10,852 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-17 15:09:14,111 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-07-17 15:09:14,118 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,121 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,124 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,124 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateApplicationModule, DemoForBoilerplate.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,124 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateCoreModule, DemoForBoilerplate.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateDataModule, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Web.DemoForBoilerplateWebModule, DemoForBoilerplate.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Api.DemoForBoilerplateWebApiModule, DemoForBoilerplate.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:14,133 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-07-17 15:09:14,341 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-17 15:09:14,341 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-17 15:09:14,341 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-17 15:09:14,341 [1    ] o.Configuration.LanguageManagementConfig - Converted DemoForBoilerplate (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-17 15:09:14,446 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-17 15:09:14,526 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-17 15:09:14,645 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-17 15:09:15,666 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-17 15:09:15,680 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-17 15:09:15,682 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-17 15:09:15,686 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-17 15:09:15,692 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: DemoForBoilerplate
+DEBUG 2016-07-17 15:09:15,700 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-17 15:09:15,720 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-17 15:09:15,724 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Demo'.
+INFO  2016-07-17 15:09:15,724 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-17 15:09:15,724 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-17 15:09:15,724 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-17 15:09:15,724 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 10.
+INFO  2016-07-17 15:09:15,725 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-17 15:09:15,725 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-17 15:09:15,725 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-17 15:09:15,742 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-17 15:09:16,019 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-07-17 15:09:16,019 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-17 15:09:16,064 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-17 15:09:16,080 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-17 15:09:16,090 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-17 15:09:16,097 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-17 15:09:16,123 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-17 15:09:16,126 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-17 15:09:16,134 [41d5f] Hangfire.Server.Worker                   - Background process 'Worker #9be41d5f' started.
+DEBUG 2016-07-17 15:09:16,156 [53e32] Hangfire.Server.Worker                   - Background process 'Worker #b9853e32' started.
+DEBUG 2016-07-17 15:09:16,182 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-17 15:09:16,185 [74171] Hangfire.Server.Worker                   - Background process 'Worker #48974171' started.
+DEBUG 2016-07-17 15:09:16,192 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.CreateUserInput
+DEBUG 2016-07-17 15:09:16,193 [c672c] Hangfire.Server.Worker                   - Background process 'Worker #9bfc672c' started.
+DEBUG 2016-07-17 15:09:16,224 [7adc9] Hangfire.Server.Worker                   - Background process 'Worker #1467adc9' started.
+DEBUG 2016-07-17 15:09:16,230 [8cd12] Hangfire.Server.Worker                   - Background process 'Worker #3688cd12' started.
+DEBUG 2016-07-17 15:09:16,263 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.UserListDto
+DEBUG 2016-07-17 15:09:16,264 [70a42] Hangfire.Server.Worker                   - Background process 'Worker #f0b70a42' started.
+DEBUG 2016-07-17 15:09:16,267 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MyPeople.Dtos.PersonDto
+DEBUG 2016-07-17 15:09:16,270 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-17 15:09:16,271 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-17 15:09:16,279 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-17 15:09:16,281 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-17 15:09:16,284 [8e9ff] Hangfire.Server.Worker                   - Background process 'Worker #ee78e9ff' started.
+DEBUG 2016-07-17 15:09:16,292 [6356d] Hangfire.Server.Worker                   - Background process 'Worker #c216356d' started.
+DEBUG 2016-07-17 15:09:16,308 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-17 15:09:16,313 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-17 15:09:16,315 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-17 15:09:16,315 [f5d7c] Hangfire.Server.Worker                   - Background process 'Worker #82af5d7c' started.
+DEBUG 2016-07-17 15:09:16,316 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MyPeople.IMyPersonAppService' with service name 'app/myPerson'.
+DEBUG 2016-07-17 15:09:16,318 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-17 15:09:16,327 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-17 15:09:16,338 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-17 15:09:16,386 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-17 15:09:16,399 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-17 15:09:16,416 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-17 15:09:38,559 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"cb392aa6-76af-41a6-8a99-d742dcfc71f1","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-17T15:09:38.5462633+08:00","Properties":{}}
+DEBUG 2016-07-17 15:09:38,610 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: cb392aa6-76af-41a6-8a99-d742dcfc71f1
+DEBUG 2016-07-17 15:09:43,282 [27   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: cb392aa6-76af-41a6-8a99-d742dcfc71f1
+DEBUG 2016-07-17 15:09:44,632 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0c45159c-317a-4f1f-ae6e-ee21b7bec831","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-17T15:09:44.6321155+08:00","Properties":{}}
+DEBUG 2016-07-17 15:09:44,661 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0c45159c-317a-4f1f-ae6e-ee21b7bec831
+WARN  2016-07-17 15:11:03,531 [27   ] lers.Filters.AbpExceptionFilterAttribute - 邮箱地址 's@s.com' 已被占用.
+Abp.UI.UserFriendlyException: 邮箱地址 's@s.com' 已被占用.
+   在 Abp.IdentityFramework.IdentityResultExtensions.CheckErrors(IdentityResult identityResult, ILocalizationManager localizationManager) 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\IdentityFramework\IdentityResultExtensions.cs:行号 68
+   在 DemoForBoilerplate.DemoForBoilerplateAppServiceBase.CheckErrors(IdentityResult identityResult) 位置 F:\cSharp\Boilerplate\DemoForBoilerplate\DemoForBoilerplate.Application\DemoForBoilerplateAppServiceBase.cs:行号 44
+   在 Castle.Proxies.UserAppServiceProxy.CheckErrors_callback(IdentityResult identityResult)
+   在 Castle.Proxies.Invocations.DemoForBoilerplateAppServiceBase_CheckErrors_1.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 31
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 53
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 45
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 35
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Auditing\AuditingInterceptor.cs:行号 45
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 26
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.UserAppServiceProxy.CheckErrors(IdentityResult identityResult)
+   在 DemoForBoilerplate.Users.UserAppService.<CreateUser>d__6.MoveNext() 位置 F:\cSharp\Boilerplate\DemoForBoilerplate\DemoForBoilerplate.Application\Users\UserAppService.cs:行号 57
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:行号 20
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2016-07-17 15:11:58,535 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0c45159c-317a-4f1f-ae6e-ee21b7bec831
+DEBUG 2016-07-17 15:12:00,328 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9f849af4-c184-4ee8-b9a0-07392d064209","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-17T15:12:00.3279279+08:00","Properties":{}}
+DEBUG 2016-07-17 15:12:00,351 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9f849af4-c184-4ee8-b9a0-07392d064209
+DEBUG 2016-07-17 15:12:17,015 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9f849af4-c184-4ee8-b9a0-07392d064209
+DEBUG 2016-07-17 15:12:18,338 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fb627287-c998-44ca-b01c-59c30f3b7bc1","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-17T15:12:18.3377025+08:00","Properties":{}}
+DEBUG 2016-07-17 15:12:18,361 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fb627287-c998-44ca-b01c-59c30f3b7bc1
+DEBUG 2016-07-17 15:12:19,451 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fb627287-c998-44ca-b01c-59c30f3b7bc1
+DEBUG 2016-07-17 15:12:20,183 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f2c6980f-ebe4-47f4-b7e6-927f2477a2d4","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-17T15:12:20.1820334+08:00","Properties":{}}
+DEBUG 2016-07-17 15:12:20,209 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f2c6980f-ebe4-47f4-b7e6-927f2477a2d4
