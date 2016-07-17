@@ -8,6 +8,9 @@
     <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
     <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
 
+			<text name="Task Management" value=" 任务管理" />
+			<text name="Tasks" value="任务"/>
+			
     <text name="InvalidUserNameOrPassword" value="用户名或密码无效" />
     <text name="ThereIsNoTenantDefinedWithName{0}" value="租户 {0}不存在" />
     <text name="TenantIsNotActive" value="租户 {0} 未激活." />

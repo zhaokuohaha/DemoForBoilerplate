@@ -2389,3 +2389,514 @@ DEBUG 2016-07-17 15:12:18,361 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2016-07-17 15:12:19,451 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fb627287-c998-44ca-b01c-59c30f3b7bc1
 DEBUG 2016-07-17 15:12:20,183 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f2c6980f-ebe4-47f4-b7e6-927f2477a2d4","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-17T15:12:20.1820334+08:00","Properties":{}}
 DEBUG 2016-07-17 15:12:20,209 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f2c6980f-ebe4-47f4-b7e6-927f2477a2d4
+DEBUG 2016-07-17 15:14:16,354 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-17 15:19:16,398 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-17 15:24:16,407 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-17 15:37:21,452 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-17 15:37:21,663 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f2c6980f-ebe4-47f4-b7e6-927f2477a2d4
+DEBUG 2016-07-17 15:37:21,683 [74171] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #48974171' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.InvalidOperationException: 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+DEBUG 2016-07-17 15:37:21,720 [7adc9] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #1467adc9' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 已成功与服务器建立连接，但是在登录过程中发生错误。 (provider: Named Pipes Provider, error: 0 - 管道的另一端上无任何进程。) ---> System.ComponentModel.Win32Exception (0x80004005): 管道的另一端上无任何进程。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:d4761e47-56d3-4555-901b-c9ce67dcb7b2
+Error Number:233,State:0,Class:20
+DEBUG 2016-07-17 15:37:21,733 [c672c] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #9bfc672c' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.InvalidOperationException: 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+DEBUG 2016-07-17 15:37:21,743 [53e32] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #b9853e32' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.InvalidOperationException: 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+INFO  2016-07-17 15:37:21,822 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2016-07-17 15:37:25,168 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f30559d7-4700-4c47-93b9-e239f8e3f509","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-17T15:37:25.1678632+08:00","Properties":{}}
+DEBUG 2016-07-17 15:37:25,276 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f30559d7-4700-4c47-93b9-e239f8e3f509
+DEBUG 2016-07-17 15:38:44,180 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f30559d7-4700-4c47-93b9-e239f8e3f509
+INFO  2016-07-17 15:41:25,472 [7adc9] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #1467adc9' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:04 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=47；handshake=161207； ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:b5c87350-f9be-48f8-bf71-278717452431
+Error Number:-2,State:0,Class:11
+DEBUG 2016-07-17 15:41:25,537 [6356d] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #c216356d' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=47；handshake=161207； ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:b5c87350-f9be-48f8-bf71-278717452431
+Error Number:-2,State:0,Class:11
+DEBUG 2016-07-17 15:41:25,538 [8e9ff] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #ee78e9ff' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:01 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=47；handshake=161207； ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:b5c87350-f9be-48f8-bf71-278717452431
+Error Number:-2,State:0,Class:11
+DEBUG 2016-07-17 15:41:25,551 [70a42] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #f0b70a42' process. Execution will be retried (attempt 1 of 2147483647) in 00:00:00 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=47；handshake=161207； ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:b5c87350-f9be-48f8-bf71-278717452431
+Error Number:-2,State:0,Class:11
+INFO  2016-07-17 15:41:25,559 [70a42] Hangfire.Server.Worker                   - Error occurred during execution of 'Worker #f0b70a42' process. Execution will be retried (attempt 2 of 2147483647) in 00:00:02 seconds.
+System.Data.SqlClient.SqlException (0x80131904): 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=47；handshake=161207； ---> System.ComponentModel.Win32Exception (0x80004005): 等待的操作过时。
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   在 Hangfire.SqlServer.SqlServerJobQueue.Dequeue(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.SqlServer.SqlServerConnection.FetchNextJob(String[] queues, CancellationToken cancellationToken)
+   在 Hangfire.Server.Worker.Execute(BackgroundProcessContext context)
+   在 Hangfire.Server.ServerProcessExtensions.Execute(IServerProcess process, BackgroundProcessContext context)
+   在 Hangfire.Server.AutomaticRetryProcess.Execute(BackgroundProcessContext context)
+ClientConnectionId:b5c87350-f9be-48f8-bf71-278717452431
+Error Number:-2,State:0,Class:11
+ERROR 2016-07-17 15:41:25,748 [26   ] ilerplate.Web.Controllers.HomeController - 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。
+System.Web.HttpException (0x80004005): 执行处理程序“System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper”的子请求时出错。 ---> System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: 连接超时时间已到。在尝试使用预登录握手确认时超过了此超时时间。这可能是因为预登录握手失败或服务器未能及时响应。  尝试连接到此服务器时花费的持续时间是 - [Pre-Login] initialization=47；handshake=161207； ---> System.ComponentModel.Win32Exception: 等待的操作过时。
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass4.<<ExecuteAsync>b__3>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.<OpenAsync>d__8.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.<OpenAsync>d__8.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<EnsureConnectionAsync>d__9.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<GetResultsAsync>d__e.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   在 System.Data.Entity.Internal.LazyAsyncEnumerator`1.<FirstMoveNextAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.<FirstOrDefaultAsync>d__25`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.<FirstOrDefaultAsync>d__10.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 0
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:行号 120
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.Users.AbpUserStore`2.<FindByIdAsync>d__10.MoveNext() 位置 D:\Halil\GitHub\module-zero\src\Abp.Zero\Authorization\Users\AbpUserStore.cs:行号 0
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:行号 120
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 DemoForBoilerplate.Sessions.SessionAppService.<GetCurrentLoginInformations>d__0.MoveNext() 位置 F:\cSharp\Boilerplate\DemoForBoilerplate\DemoForBoilerplate.Application\Sessions\SessionAppService.cs:行号 15
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext() 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\InternalAsyncHelper.cs:行号 120
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass7`1.<Run>b__5(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.Threading.AsyncHelper.RunSync[TResult](Func`1 func) 位置 D:\Halil\GitHub\aspnetboilerplate\src\Abp\Threading\AsyncHelper.cs:行号 33
+   在 DemoForBoilerplate.Web.Controllers.LayoutController.UserMenuOrLoginLink() 位置 F:\cSharp\Boilerplate\DemoForBoilerplate\DemoForBoilerplate.Web\Controllers\LayoutController.cs:行号 63
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   在 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.<>c__DisplayClassa.<EndProcessRequest>b__9()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap(Action action)
+   在 System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerAsyncWrapper.EndProcessRequest(IAsyncResult result)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 System.Web.Mvc.Html.ChildActionExtensions.ActionHelper(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues, TextWriter textWriter)
+   在 System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName, RouteValueDictionary routeValues)
+   在 System.Web.Mvc.Html.ChildActionExtensions.Action(HtmlHelper htmlHelper, String actionName, String controllerName)
+   在 ASP._Page_Views_Shared__TopBar_cshtml.Execute() 位置 f:\cSharp\Boilerplate\DemoForBoilerplate\DemoForBoilerplate.Web\Views\Shared\_TopBar.cshtml:行号 18
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   在 ASP._Page_Views_Shared__Layout_cshtml.Execute() 位置 f:\cSharp\Boilerplate\DemoForBoilerplate\DemoForBoilerplate.Web\Views\Shared\_Layout.cshtml:行号 39
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass3.<RenderPageCore>b__2(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-07-18 00:06:37,451 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-18 00:06:43,196 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-07-18 00:06:43,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,208 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,209 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,209 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,209 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,209 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,209 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateApplicationModule, DemoForBoilerplate.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateCoreModule, DemoForBoilerplate.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateDataModule, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Web.DemoForBoilerplateWebModule, DemoForBoilerplate.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Api.DemoForBoilerplateWebApiModule, DemoForBoilerplate.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:43,250 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-07-18 00:06:43,404 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-18 00:06:43,404 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-18 00:06:43,404 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-18 00:06:43,404 [1    ] o.Configuration.LanguageManagementConfig - Converted DemoForBoilerplate (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-18 00:06:47,603 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-18 00:06:47,961 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-18 00:06:48,109 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:06:50,193 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-18 00:06:50,207 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-18 00:06:50,209 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-18 00:06:50,213 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-18 00:06:50,238 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: DemoForBoilerplate
+DEBUG 2016-07-18 00:07:25,768 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-18 00:07:25,795 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-18 00:07:25,800 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Demo'.
+INFO  2016-07-18 00:07:25,800 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-18 00:07:25,801 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-18 00:07:25,801 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-18 00:07:25,801 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 10.
+INFO  2016-07-18 00:07:25,801 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-18 00:07:25,801 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-18 00:07:25,801 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-18 00:07:25,894 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-18 00:07:26,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-07-18 00:07:26,137 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-18 00:07:26,245 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-18 00:07:26,363 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-18 00:07:26,373 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-18 00:07:26,377 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-18 00:07:26,567 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-18 00:07:26,569 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2016-07-18 00:07:26,614 [4316d] Hangfire.Server.Worker                   - Background process 'Worker #04b4316d' started.
+DEBUG 2016-07-18 00:07:26,651 [08dbe] Hangfire.Server.Worker                   - Background process 'Worker #2ed08dbe' started.
+DEBUG 2016-07-18 00:07:26,734 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-18 00:07:26,738 [409c5] Hangfire.Server.Worker                   - Background process 'Worker #de3409c5' started.
+DEBUG 2016-07-18 00:07:26,911 [009ff] Hangfire.Server.Worker                   - Background process 'Worker #00e009ff' started.
+DEBUG 2016-07-18 00:07:27,146 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-18 00:07:27,190 [ee1ec] Hangfire.Server.Worker                   - Background process 'Worker #3e3ee1ec' started.
+DEBUG 2016-07-18 00:07:27,255 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-18 00:07:27,298 [ebf94] Hangfire.Server.Worker                   - Background process 'Worker #3f0ebf94' started.
+DEBUG 2016-07-18 00:07:27,319 [ad2f4] Hangfire.Server.Worker                   - Background process 'Worker #02ead2f4' started.
+DEBUG 2016-07-18 00:07:27,388 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-18 00:07:27,390 [eea3f] Hangfire.Server.Worker                   - Background process 'Worker #43aeea3f' started.
+DEBUG 2016-07-18 00:07:27,409 [beb4a] Hangfire.Server.Worker                   - Background process 'Worker #f9cbeb4a' started.
+DEBUG 2016-07-18 00:07:27,475 [7875a] Hangfire.Server.Worker                   - Background process 'Worker #a277875a' started.
+DEBUG 2016-07-18 00:07:27,545 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-18 00:07:27,550 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-18 00:07:27,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-18 00:07:27,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.CreateUserInput
+DEBUG 2016-07-18 00:07:27,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.UserListDto
+DEBUG 2016-07-18 00:07:27,753 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MyPeople.Dtos.PersonDto
+DEBUG 2016-07-18 00:07:27,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-18 00:07:27,762 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-18 00:07:27,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-18 00:07:27,807 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-18 00:07:27,809 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-18 00:07:27,812 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-18 00:07:27,814 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MyPeople.IMyPersonAppService' with service name 'app/myPerson'.
+DEBUG 2016-07-18 00:07:27,816 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-18 00:09:24,465 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"02f284aa-8f44-4834-9015-6fe09db05385","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-18T00:09:24.452915+08:00","Properties":{}}
+DEBUG 2016-07-18 00:09:24,545 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 02f284aa-8f44-4834-9015-6fe09db05385
+DEBUG 2016-07-18 00:20:47,019 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-07-18 00:20:50,231 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2016-07-18 00:20:50,237 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,242 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,242 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,242 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,242 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,242 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,242 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,242 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.9.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.9.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateApplicationModule, DemoForBoilerplate.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateCoreModule, DemoForBoilerplate.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.DemoForBoilerplateDataModule, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Web.DemoForBoilerplateWebModule, DemoForBoilerplate.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: DemoForBoilerplate.Api.DemoForBoilerplateWebApiModule, DemoForBoilerplate.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:50,253 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2016-07-18 00:20:50,392 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-18 00:20:50,392 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-18 00:20:50,392 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-07-18 00:20:50,392 [1    ] o.Configuration.LanguageManagementConfig - Converted DemoForBoilerplate (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2016-07-18 00:20:54,019 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2016-07-18 00:20:54,146 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2016-07-18 00:20:54,276 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext, DemoForBoilerplate.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-07-18 00:20:55,719 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-07-18 00:20:55,747 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-07-18 00:20:55,749 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-07-18 00:20:55,752 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-07-18 00:20:55,754 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: DemoForBoilerplate
+DEBUG 2016-07-18 00:20:55,764 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-07-18 00:20:55,791 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-07-18 00:20:55,795 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: (LocalDb)\MSSQLLocalDB@Demo'.
+INFO  2016-07-18 00:20:55,795 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2016-07-18 00:20:55,795 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2016-07-18 00:20:55,796 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-07-18 00:20:55,796 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 10.
+INFO  2016-07-18 00:20:55,796 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-07-18 00:20:55,796 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-07-18 00:20:55,796 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-07-18 00:20:55,817 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-07-18 00:20:56,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes defines auto mapping attributes
+DEBUG 2016-07-18 00:20:56,016 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-07-18 00:20:56,078 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-07-18 00:20:56,089 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-07-18 00:20:56,102 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2016-07-18 00:20:56,106 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'AggregatedCounter'...
+DEBUG 2016-07-18 00:20:56,118 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2016-07-18 00:20:56,120 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+INFO  2016-07-18 00:20:56,141 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2016-07-18 00:20:56,146 [a6980] Hangfire.Server.Worker                   - Background process 'Worker #6c4a6980' started.
+DEBUG 2016-07-18 00:20:56,158 [37f4e] Hangfire.Server.Worker                   - Background process 'Worker #1ac37f4e' started.
+DEBUG 2016-07-18 00:20:56,164 [d253c] Hangfire.Server.Worker                   - Background process 'Worker #fa8d253c' started.
+DEBUG 2016-07-18 00:20:56,172 [e491d] Hangfire.Server.Worker                   - Background process 'Worker #68ce491d' started.
+DEBUG 2016-07-18 00:20:56,186 [ae16d] Hangfire.Server.Worker                   - Background process 'Worker #b73ae16d' started.
+DEBUG 2016-07-18 00:20:56,188 [a0fd7] Hangfire.Server.Worker                   - Background process 'Worker #b15a0fd7' started.
+DEBUG 2016-07-18 00:20:56,197 [9a8be] Hangfire.Server.Worker                   - Background process 'Worker #c6d9a8be' started.
+DEBUG 2016-07-18 00:20:56,234 [39480] Hangfire.Server.Worker                   - Background process 'Worker #14039480' started.
+DEBUG 2016-07-18 00:20:56,245 [e57fb] Hangfire.Server.Worker                   - Background process 'Worker #073e57fb' started.
+DEBUG 2016-07-18 00:20:56,268 [6eae5] Hangfire.Server.Worker                   - Background process 'Worker #acc6eae5' started.
+DEBUG 2016-07-18 00:20:56,273 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-07-18 00:20:56,278 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-07-18 00:20:56,289 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-07-18 00:20:56,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.CreateUserInput
+DEBUG 2016-07-18 00:20:56,308 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Job'...
+DEBUG 2016-07-18 00:20:56,348 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Users.Dto.UserListDto
+DEBUG 2016-07-18 00:20:56,350 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MyPeople.Dtos.PersonDto
+DEBUG 2016-07-18 00:20:56,351 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2016-07-18 00:20:56,357 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'List'...
+DEBUG 2016-07-18 00:20:56,360 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-07-18 00:20:56,362 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - DemoForBoilerplate.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-07-18 00:20:56,366 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Set'...
+DEBUG 2016-07-18 00:20:56,372 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from table 'Hash'...
+DEBUG 2016-07-18 00:20:56,385 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-07-18 00:20:56,387 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-07-18 00:20:56,388 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-07-18 00:20:56,390 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MyPeople.IMyPersonAppService' with service name 'app/myPerson'.
+DEBUG 2016-07-18 00:20:56,392 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'DemoForBoilerplate.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-07-18 00:21:12,292 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e02dac00-fff4-4a56-a031-56552e3f742c","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-18T00:21:12.2797807+08:00","Properties":{}}
+DEBUG 2016-07-18 00:21:12,366 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e02dac00-fff4-4a56-a031-56552e3f742c
+DEBUG 2016-07-18 00:21:24,185 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e02dac00-fff4-4a56-a031-56552e3f742c
+DEBUG 2016-07-18 00:21:25,232 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a2f62c8d-4089-427a-8a83-dbd0d0fdcb9d","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-18T00:21:25.2312378+08:00","Properties":{}}
+DEBUG 2016-07-18 00:21:25,259 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a2f62c8d-4089-427a-8a83-dbd0d0fdcb9d
+DEBUG 2016-07-18 00:21:28,468 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a2f62c8d-4089-427a-8a83-dbd0d0fdcb9d
+DEBUG 2016-07-18 00:21:29,278 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"68f71bad-b2f9-4a50-ab4c-3c74892e0a91","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-18T00:21:29.2776528+08:00","Properties":{}}
+DEBUG 2016-07-18 00:21:29,394 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 68f71bad-b2f9-4a50-ab4c-3c74892e0a91
+DEBUG 2016-07-18 00:21:30,203 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 68f71bad-b2f9-4a50-ab4c-3c74892e0a91
+DEBUG 2016-07-18 00:21:30,859 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"8e882315-fb69-4c44-a73d-413c4c68bb52","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-18T00:21:30.858807+08:00","Properties":{}}
+DEBUG 2016-07-18 00:21:30,884 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 8e882315-fb69-4c44-a73d-413c4c68bb52
+DEBUG 2016-07-18 00:21:32,636 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 8e882315-fb69-4c44-a73d-413c4c68bb52
+DEBUG 2016-07-18 00:21:33,312 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2010be1f-f8ad-4590-b644-65d99ab9495f","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-18T00:21:33.3111909+08:00","Properties":{}}
+DEBUG 2016-07-18 00:21:33,331 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2010be1f-f8ad-4590-b644-65d99ab9495f
+DEBUG 2016-07-18 00:21:35,420 [5    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2010be1f-f8ad-4590-b644-65d99ab9495f
+DEBUG 2016-07-18 00:21:36,047 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"44b43669-1c68-485c-901e-f531d9fffc0e","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-07-18T00:21:36.0473128+08:00","Properties":{}}
+DEBUG 2016-07-18 00:21:36,069 [25   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 44b43669-1c68-485c-901e-f531d9fffc0e

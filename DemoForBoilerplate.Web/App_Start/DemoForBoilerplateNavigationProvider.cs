@@ -14,39 +14,47 @@ namespace DemoForBoilerplate.Web
     {
         public override void SetNavigation(INavigationProviderContext context)
         {
-            context.Manager.MainMenu
-                .AddItem(
-                    new MenuItemDefinition(
-                        "Home",
-                        L("HomePage"),
-                        url: "",
-                        icon: "fa fa-home",
-                        requiresAuthentication: true
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        "Tenants",
-                        L("Tenants"),
-                        url: "Tenants",
-                        icon: "fa fa-globe",
-                        requiredPermissionName: PermissionNames.Pages_Tenants
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        "Users",
-                        L("Users"),
-                        url: "Users",
-                        icon: "fa fa-users",
-                        requiredPermissionName: PermissionNames.Pages_Users
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        "About",
-                        L("About"),
-                        url: "About",
-                        icon: "fa fa-info"
-                        )
-                );
+			context.Manager.MainMenu
+				.AddItem(
+					new MenuItemDefinition(
+						"Home",
+						L("HomePage"),
+						url: "",
+						icon: "fa fa-home",
+						requiresAuthentication: true
+						)
+				).AddItem(
+					new MenuItemDefinition(
+						"Tenants",
+						L("Tenants"),
+						url: "Tenants",
+						icon: "fa fa-globe",
+						requiredPermissionName: PermissionNames.Pages_Tenants
+						)
+				).AddItem(
+					new MenuItemDefinition(
+						"Users",
+						L("Users"),
+						url: "Users",
+						icon: "fa fa-users",
+						requiredPermissionName: PermissionNames.Pages_Users
+						)
+				).AddItem(
+					new MenuItemDefinition(
+						"MyTasks",
+						L("Tasks"),
+						url: "MyTasks",
+						icon: "fa fa-fire",
+						requiresAuthentication: true
+						)
+				).AddItem(
+					new MenuItemDefinition(
+						"About",
+						L("About"),
+						url: "About",
+						icon: "fa fa-info"
+						)
+				);
         }
 
         private static ILocalizableString L(string name)
