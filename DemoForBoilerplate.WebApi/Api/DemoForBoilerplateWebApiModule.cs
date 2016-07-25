@@ -5,6 +5,7 @@ using Abp.Configuration.Startup;
 using Abp.Modules;
 using Abp.WebApi;
 using Abp.WebApi.Controllers.Dynamic.Builders;
+using DemoForBoilerplate.MyTasks;
 
 namespace DemoForBoilerplate.Api
 {
@@ -18,7 +19,7 @@ namespace DemoForBoilerplate.Api
             DynamicApiControllerBuilder
                 .ForAll<IApplicationService>(typeof(DemoForBoilerplateApplicationModule).Assembly, "app")
                 .Build();
-
+		//	DynamicApiControllerBuilder.ForAll<IMyTaskAppService>(typeof(DemoForBoilerplateApplicationModule).Assembly, "task").Build();
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
         }
     }

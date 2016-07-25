@@ -116,8 +116,9 @@
   <ItemGroup>
     <Compile Include="EntityFramework\DemoForBoilerplateDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\DemoForBoilerplateRepositoryBase.cs" />
-    <Compile Include="EntityFramework\Repositories\MyPersonRopository.cs" />
+    <Compile Include="EntityFramework\Repositories\MyPersonRepository.cs" />
     <Compile Include="EntityFramework\Repositories\MyTaskRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\StudentRepository.cs" />
     <Compile Include="Migrations\201506210746108_AbpZero_Initial.cs" />
     <Compile Include="Migrations\201506210746108_AbpZero_Initial.Designer.cs">
       <DependentUpon>201506210746108_AbpZero_Initial.cs</DependentUpon>
@@ -185,6 +186,18 @@
     <Compile Include="Migrations\201607170708335_ChangDateTypeForId.cs" />
     <Compile Include="Migrations\201607170708335_ChangDateTypeForId.Designer.cs">
       <DependentUpon>201607170708335_ChangDateTypeForId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607180315178_Add Some Person.cs" />
+    <Compile Include="Migrations\201607180315178_Add Some Person.Designer.cs">
+      <DependentUpon>201607180315178_Add Some Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607180319318_Add Some Person ReTry.cs" />
+    <Compile Include="Migrations\201607180319318_Add Some Person ReTry.Designer.cs">
+      <DependentUpon>201607180319318_Add Some Person ReTry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607250243381_Student.cs" />
+    <Compile Include="Migrations\201607250243381_Student.Designer.cs">
+      <DependentUpon>201607250243381_Student.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -259,6 +272,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607170708335_ChangDateTypeForId.resx">
       <DependentUpon>201607170708335_ChangDateTypeForId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607180315178_Add Some Person.resx">
+      <DependentUpon>201607180315178_Add Some Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607180319318_Add Some Person ReTry.resx">
+      <DependentUpon>201607180319318_Add Some Person ReTry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607250243381_Student.resx">
+      <DependentUpon>201607250243381_Student.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

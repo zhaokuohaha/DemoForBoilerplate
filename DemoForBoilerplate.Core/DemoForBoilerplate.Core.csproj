@@ -110,6 +110,10 @@
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
     <Compile Include="MyTasks\MyTask.cs" />
+    <Compile Include="Students\IStudentRepository.cs" />
+    <Compile Include="Students\Origin.cs" />
+    <Compile Include="Students\Sex.cs" />
+    <Compile Include="Students\Student.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />
@@ -121,9 +125,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\DemoForBoilerplate-zh-CN.xml" />
+    <EmbeddedResource Include="Localization\Source\DemoForBoilerplate-zh-CN.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Localization\Source\DemoForBoilerplate-tr.xml" />
-    <EmbeddedResource Include="Localization\Source\DemoForBoilerplate.xml" />
+    <EmbeddedResource Include="Localization\Source\DemoForBoilerplate.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\DemoForBoilerplate-pt-BR.xml" />

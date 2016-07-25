@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DemoForBoilerplate.MyTasks
 {
-	public interface IMyTaskAppService : IApplicationService
+	public interface IMyTaskApplicationService : IApplicationService
 	{
 		GetMyTaskOutput GetMyTask(GetMyTaskInput input);
 		void UpdateMyTask(UpdateMyTaskInput input);

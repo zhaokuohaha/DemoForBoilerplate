@@ -21,8 +21,14 @@ namespace DemoForBoilerplate.Migrations
 		protected override void Seed(DemoForBoilerplate.EntityFramework.DemoForBoilerplateDbContext context)
         {
             context.DisableAllFilters();
-
-            if (Tenant == null)
+			context.People.AddOrUpdate(
+				p => p.Name,
+				new MyPerson { Name = "赵大" },
+				new MyPerson { Name = "钱二" },
+				new MyPerson { Name = "孙三" },
+				new MyPerson { Name = "王石" }
+			);
+			if (Tenant == null)
             {
                 //Host seed
                 new InitialHostDbBuilder(context).Create();
@@ -33,16 +39,8 @@ namespace DemoForBoilerplate.Migrations
             }
             else
             {
-				context.People.AddOrUpdate(
-					p => p.Name,
-					new MyPerson { Name = "张三" },
-					new MyPerson { Name = "王二" },
-					new MyPerson { Name = "李四" },
-					new MyPerson { Name = "老王" }
-				);
 				//You can add seed for tenant databases and use Tenant property...
 			}
-
             context.SaveChanges();
         }
     }

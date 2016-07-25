@@ -49,6 +49,14 @@ namespace DemoForBoilerplate.Web
 						)
 				).AddItem(
 					new MenuItemDefinition(
+						"Student",
+						L("Student"),
+						url: "Student",
+						icon: "fa fa-university",
+						requiresAuthentication: true
+						)
+				).AddItem(
+					new MenuItemDefinition(
 						"About",
 						L("About"),
 						url: "About",

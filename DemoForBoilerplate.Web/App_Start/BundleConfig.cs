@@ -56,8 +56,9 @@ namespace DemoForBoilerplate.Web
                         "~/Abp/Framework/scripts/libs/abp.spin.js",
                         "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
 
-                        "~/Scripts/jquery.signalR-2.2.0.min.js"
-                    )
+                        "~/Scripts/jquery.signalR-2.2.0.min.js",
+						"~/Scripts/jquery.unobtrusive-ajax.min.js"
+					)
                 );
 
             //APPLICATION RESOURCES

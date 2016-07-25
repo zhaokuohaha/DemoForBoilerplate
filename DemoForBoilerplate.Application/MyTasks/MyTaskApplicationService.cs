@@ -12,7 +12,7 @@ namespace DemoForBoilerplate.MyTasks
 	/// <summary>
 	/// 构造性注入
 	/// </summary>
-	public class MyTaskApplicationService : ApplicationService, IMyTaskAppService
+	public class MyTaskApplicationService : ApplicationService, IMyTaskApplicationService
 	{
 		private readonly IMyTaskRepository _myTaskRepository;
 		private readonly IMyPersonRepository _myPersonRepository;
@@ -22,6 +22,7 @@ namespace DemoForBoilerplate.MyTasks
 			_myTaskRepository = myTaskRepository;
 			_myPersonRepository = myPersonRepository;
 		}
+
 		public void CreateMyTask(CreattMyTaskInput input)
 		{
 			Logger.Info("Creating a task for input" + input);
@@ -61,6 +62,3 @@ namespace DemoForBoilerplate.MyTasks
 	}
 }
 
-/*
-
-	 */

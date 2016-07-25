@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace DemoForBoilerplate.EntityFramework.Repositories
 {
-	public class MyPersonRopository : DemoForBoilerplateRepositoryBase<MyPerson, int>, IMyPersonRepository
+	public class MyPersonRepository : DemoForBoilerplateRepositoryBase<MyPerson, int>, IMyPersonRepository
 	{
-		public MyPersonRopository(IDbContextProvider<DemoForBoilerplateDbContext> dbContextProvider) : base(dbContextProvider)
+		public MyPersonRepository(IDbContextProvider<DemoForBoilerplateDbContext> dbContextProvider) : base(dbContextProvider)
 		{
 
 		}

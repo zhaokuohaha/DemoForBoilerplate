@@ -1,0 +1,50 @@
+﻿@using DemoForBoilerplate.Students
+@using Abp.Web.Mvc.Extensions;
+@model DemoForBoilerplate.Students.Dtos.AllClassInfo
+@section styles{
+	@Html.IncludeStyle("~/Content/DataTables/css/dataTables.bootstrap.min.css")	
+}
+@section scripts{
+	@Html.IncludeScript("~/Scripts/DataTables/jquery.dataTables.min.js")	
+	@Html.IncludeScript("~/Scripts/DataTables/dataTables.bootstrap.min.js")
+	@Html.IncludeScript("~/Views/Student/index.js")
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			@{int i = 0; }
+			@foreach(var list in Model.allClass)
+			{
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<div class="panel-title">
+							班级 @(i++)
+						</div>
+					</div>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>@Html.DisplayNameFor(m => list.FirstOrDefault().Id)</th>
+								<th>@Html.DisplayNameFor(m => list.FirstOrDefault().origin)</th>
+								<th>@Html.DisplayNameFor(m => list.FirstOrDefault().sex)</th>
+								<th>@Html.DisplayNameFor(m => list.FirstOrDefault().score)</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach (var student in list)
+							{
+								<tr>
+									<td>@Html.DisplayFor(m => student.Id)</td>
+									<td>@Html.DisplayFor(m => student.origin)</td>
+									<td>@Html.DisplayFor(m => student.sex)</td>
+									<td>@Html.DisplayFor(m => student.score)</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+			}
+		</div>
+	</div>
+</div>

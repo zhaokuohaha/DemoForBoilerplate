@@ -10,6 +10,12 @@
 
 			<text name="Task Management" value=" 任务管理" />
 			<text name="Tasks" value="任务"/>
+			<text name="Task Id" value="任务号"/>
+			<text name="Task Description" value="任务详细"/>
+			<text name="Creation Time" value="创建时间"/>
+			<text name="Task State" value="状态"/>
+			<text name="Person" value="用户"/>
+			<text name="CreateNewTask" value="创建任务"/>
 			
     <text name="InvalidUserNameOrPassword" value="用户名或密码无效" />
     <text name="ThereIsNoTenantDefinedWithName{0}" value="租户 {0}不存在" />
@@ -23,6 +29,8 @@
     <text name="LogIn" value="登录" />
 
     <text name="LoginFailed" value="登录失败!" />
+
+			<text name="Student" value="学生" />
     
   </texts>
 </localizationDictionary>

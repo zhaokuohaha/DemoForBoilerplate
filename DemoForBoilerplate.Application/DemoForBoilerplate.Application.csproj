@@ -113,11 +113,15 @@
     <Compile Include="MyTasks\Dtos\GetMyTaskOutput.cs" />
     <Compile Include="MyTasks\Dtos\MyTaskDto.cs" />
     <Compile Include="MyTasks\Dtos\UpdateMyTaskInput.cs" />
-    <Compile Include="MyTasks\IMyTaskAppService.cs" />
+    <Compile Include="MyTasks\IMyTaskApplicationService.cs" />
     <Compile Include="MyTasks\MyTaskApplicationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles\IRoleAppService.cs" />
     <Compile Include="Roles\Dto\UpdateRolePermissionsInput.cs" />
+    <Compile Include="Students\Dtos\AllClassInfo.cs" />
+    <Compile Include="Students\Dtos\ClassInfo.cs" />
+    <Compile Include="Students\IStudentApplicationService.cs" />
+    <Compile Include="Students\StudentApplicationService.cs" />
     <Compile Include="Users\Dto\CreateUserInput.cs" />
     <Compile Include="Users\IUserAppService.cs" />
     <Compile Include="Roles\RoleAppService.cs" />
@@ -140,6 +144,10 @@
     <ProjectReference Include="..\DemoForBoilerplate.Core\DemoForBoilerplate.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>DemoForBoilerplate.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoForBoilerplate.EntityFramework\DemoForBoilerplate.EntityFramework.csproj">
+      <Project>{3979F157-DEB0-4878-AB1D-4CEF6B5A1300}</Project>
+      <Name>DemoForBoilerplate.EntityFramework</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

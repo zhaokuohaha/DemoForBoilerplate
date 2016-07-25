@@ -1,7 +1,76 @@
-﻿
+﻿@using Abp.Web.Mvc.Extensions;
+@model DemoForBoilerplate.MyTasks.Dtos.GetMyTaskOutput
 @{
-    ViewBag.Title = "Tasks";
+	ViewBag.Title = "Tasks";
+}
+@section scripts{
+	@Html.IncludeScript("~/Views/MyTasks/Index.js")
 }
 
-<h2>@L("Task Management")</h2>
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<h2>@L("Task Management")</h2>
+				</div>
+			</div>
+			<div class="panel-body">
+				<table class="table table-bordered">
+					<tr>
+						<th>@L("Task Id")</th>
+						<th>@L("Person")</th>
+						<th>@L("Task Description")</th>
+						<th>@L("Creation Time")</th>
+						<th>@L("Task State")</th>
+					</tr>
+					@foreach (var item in Model.Tasks)
+					{
+						<tr>
+							<td>@item.Id</td>
+							<td>@item.AssignedPersonName </td>
+							<td>@item.Description</td>
+							<td>@item.CreationTime</td>
+							<td>@item.State</td>
+						</tr>
+					}
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		@Ajax.ActionLink("CreateNewTask", "CreateMyTask",new { controller="MyTasks"}, new AjaxOptions { UpdateTargetId = "ajaxmodal", InsertionMode = InsertionMode.Replace,HttpMethod = "get",OnComplete="showModal"})
 
+		@*<button id="CreateNewTask" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> @L("CreateNewTask")</button>*@
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="modal fade" id="TaskCreateModal" tabindex="-1" role="dialog" aria-labelledby="TaskCreateModalLabel" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<form name="taskCreateForm" role="form" novalidate class="form-validation">
+						<div class="modal-header">
+							<h4 class="modal-title">
+								<span>@L("CreateNewTask")</span>
+							</h4>
+						</div>
+						<div class="modal-body" id="ajaxmodal">
+							
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">@L("Cancel")</button>
+							<button type="submit" class="btn btn-primary blue"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function showModal() {
+		$('#TaskCreateModal').modal();
+	}
+	
+</script>

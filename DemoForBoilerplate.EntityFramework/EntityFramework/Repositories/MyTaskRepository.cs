@@ -11,7 +11,7 @@ namespace DemoForBoilerplate.EntityFramework.Repositories
 {
 	public class MyTaskRepository :	DemoForBoilerplateRepositoryBase<MyTask, int> , IMyTaskRepository
 	{
-		public MyTaskRepository(IDbContextProvider<DemoForBoilerplateDbContext> dbContextProvider) 
+		public MyTaskRepository(IDbContextProvider<DemoForBoilerplateDbContext> dbContextProvider)
 			: base(dbContextProvider)
 		{
 		}
