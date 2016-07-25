@@ -44,7 +44,6 @@ namespace DemoForBoilerplate.Students
 
 		public AllClassInfo initClasses(int classNum)
 		{
-
 			var res = _studentResopitory.GetAllList();
 			res = res.OrderBy(s => s.origin).ThenBy(s => s.sex).ThenBy(s => s.score).ToList();
 			AllClassInfo allClass = new AllClassInfo(classNum);
@@ -52,7 +51,14 @@ namespace DemoForBoilerplate.Students
 			{
 				allClass.allClass[i % classNum].Add(res[i]);
 			}
+			return FixClass(allClass);
+		}
+
+		public AllClassInfo FixClass(AllClassInfo allClass)
+		{
+				
 			return allClass;
 		}
+
 	}
 }
