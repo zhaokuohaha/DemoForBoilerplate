@@ -1,4 +1,5 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.AutoMapper;
+using Abp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DemoForBoilerplate.MyTasks.Dtos
 {
+	[AutoMapFrom(typeof(MyTask))]
 	public class MyTaskDto : Entity<int>
 	{
 		public int ? AssignedPersonId { get; set; }

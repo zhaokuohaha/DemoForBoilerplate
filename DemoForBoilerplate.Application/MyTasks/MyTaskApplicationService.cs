@@ -14,6 +14,7 @@ namespace DemoForBoilerplate.MyTasks
 	/// </summary>
 	public class MyTaskApplicationService : ApplicationService, IMyTaskApplicationService
 	{
+		
 		private readonly IMyTaskRepository _myTaskRepository;
 		private readonly IMyPersonRepository _myPersonRepository;
 
@@ -36,6 +37,7 @@ namespace DemoForBoilerplate.MyTasks
 		
 		public GetMyTaskOutput GetMyTask(GetMyTaskInput input)
 		{
+			Logger.Info("Get Tasl for input: input: " + input);
 			var myTasks = _myTaskRepository.GetAllWithPeople(input.AssignedPersonId, input.state);
 			return new GetMyTaskOutput
 			{
