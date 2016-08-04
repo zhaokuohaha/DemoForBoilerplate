@@ -45,6 +45,11 @@ namespace DemoForBoilerplate.MyTasks
 			};
 		}
 
+		public void DeleteMyTask(DeleteMyTaskInput input)
+		{	
+			_myTaskRepository.Delete(input.Id);
+		}
+
 		public void UpdateMyTask(UpdateMyTaskInput input)
 		{
 			Logger.Info("Updating a task for input: " + input);

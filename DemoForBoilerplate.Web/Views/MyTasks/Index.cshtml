@@ -6,7 +6,11 @@
 @section scripts{
 	@Html.IncludeScript("~/Views/MyTasks/Index.js")
 }
+<div class="row">
+	<div class="alert alert-info" id="optionInfo" style="text-align:center; display:none">
 
+	</div>
+</div>
 <div class="row">
 	<div class="col-md-12">
 		<div class="panel panel-primary">
@@ -27,7 +31,7 @@
 					</tr>
 					@foreach (var item in Model.Tasks)
 					{
-						<tr>
+						<tr id="tr-@item.Id">
 							<td>@item.Id</td>
 							<td>@item.AssignedPersonName </td>
 							<td>@item.Description</td>
@@ -37,7 +41,7 @@
 								<div class="button-group">
 									@Ajax.ActionLink(L("Eidt"), "EditTask", new {id = item.Id }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ajaxmodal", OnComplete = "showModal" }, new { @class = "btn btn-primary" })
 									@*@Ajax.ActionLink(L("Delete"),"DeleteTask","",new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId="ajaxmodel"}, new { @class = "btn btn-danger" })*@
-									<button class="btn btn-danger" data-itemid="@item.Id">@L("Delete")</button>
+									<button class="btn btn-danger delete-task" onclick="deletetask(@item.Id)">@L("Delete")</button>
 								</div>
 							</td>
 						</tr>
@@ -66,6 +70,27 @@
 <script>
 	function showModal() {
 		$('#TaskCreateModal').modal();
+	}
+
+	function deletetask(id){
+		$.ajax({
+			url: "/api/services/app/MyTask/DeleteMyTask",
+			type: "post",
+			data:JSON.stringify({Id:id}),
+			contentType:"application/json",
+			success: function (data) {
+				$('#optionInfo').text("@L("Delete Successful ! ")");
+				$('#optionInfo').show(1000);
+				setTimeout(function(){
+					$('#optionInfo').hide(1000);
+					$('#tr-'+id).remove();
+				},3000);
+			},
+
+			error: function (data) {
+				console.error(data);
+			}
+		})
 	}
 	
 </script>

@@ -13,6 +13,7 @@ namespace DemoForBoilerplate.MyTasks
 		GetMyTaskOutput GetMyTask(GetMyTaskInput input);
 		void UpdateMyTask(UpdateMyTaskInput input);
 		void CreateMyTask(CreattMyTaskInput input);
+		void DeleteMyTask(DeleteMyTaskInput input);
 		string Test();
 	}
 }
