@@ -199,6 +199,14 @@
     <Compile Include="Migrations\201607250243381_Student.Designer.cs">
       <DependentUpon>201607250243381_Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608040626560_softDelete.cs" />
+    <Compile Include="Migrations\201608040626560_softDelete.Designer.cs">
+      <DependentUpon>201608040626560_softDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608040712049_ImplementIDeletionAudited.cs" />
+    <Compile Include="Migrations\201608040712049_ImplementIDeletionAudited.Designer.cs">
+      <DependentUpon>201608040712049_ImplementIDeletionAudited.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DemoForBoilerplateDataModule.cs" />
@@ -281,6 +289,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607250243381_Student.resx">
       <DependentUpon>201607250243381_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608040626560_softDelete.resx">
+      <DependentUpon>201608040626560_softDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608040712049_ImplementIDeletionAudited.resx">
+      <DependentUpon>201608040712049_ImplementIDeletionAudited.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
