@@ -661,6 +661,7 @@
     <Content Include="Views\MyTasks\Index.cshtml" />
     <Content Include="Views\MyTasks\MyTask.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\MyTasks\EditTask.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

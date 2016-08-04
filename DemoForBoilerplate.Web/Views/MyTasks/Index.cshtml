@@ -23,6 +23,7 @@
 						<th>@L("Task Description")</th>
 						<th>@L("Creation Time")</th>
 						<th>@L("Task State")</th>
+						<th>@L("Operation")</th>
 					</tr>
 					@foreach (var item in Model.Tasks)
 					{
@@ -32,6 +33,13 @@
 							<td>@item.Description</td>
 							<td>@item.CreationTime</td>
 							<td>@item.State</td>
+							<td>
+								<div class="button-group">
+									@Ajax.ActionLink(L("Eidt"), "EditTask", new {id = item.Id }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ajaxmodal", OnComplete = "showModal" }, new { @class = "btn btn-primary" })
+									@*@Ajax.ActionLink(L("Delete"),"DeleteTask","",new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId="ajaxmodel"}, new { @class = "btn btn-danger" })*@
+									<button class="btn btn-danger" data-itemid="@item.Id">@L("Delete")</button>
+								</div>
+							</td>
 						</tr>
 					}
 				</table>
@@ -39,9 +47,7 @@
 		</div>
 	</div>
 	<div class="col-md-12">
-		@Ajax.ActionLink("CreateNewTask", "CreateMyTask",new { controller="MyTasks"}, new AjaxOptions { UpdateTargetId = "ajaxmodal", InsertionMode = InsertionMode.Replace,HttpMethod = "get",OnComplete="showModal"})
-
-		@*<button id="CreateNewTask" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> @L("CreateNewTask")</button>*@
+		@Ajax.ActionLink("CreateNewTask", "CreateMyTask",new { controller="MyTasks"}, new AjaxOptions { UpdateTargetId = "ajaxmodal", InsertionMode = InsertionMode.Replace,HttpMethod = "get",OnComplete="showModal"}, new { type="button", @class="btn btn-primary"})
 	</div>
 </div>
 <div class="row">
@@ -49,19 +55,8 @@
 		<div class="modal fade" id="TaskCreateModal" tabindex="-1" role="dialog" aria-labelledby="TaskCreateModalLabel" data-backdrop="static">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
-					<form name="taskCreateForm" role="form" novalidate class="form-validation">
-						<div class="modal-header">
-							<h4 class="modal-title">
-								<span>@L("CreateNewTask")</span>
-							</h4>
-						</div>
-						<div class="modal-body" id="ajaxmodal">
-							
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">@L("Cancel")</button>
-							<button type="submit" class="btn btn-primary blue"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
-						</div>
+					<form name="taskCreateForm" id="ajaxmodal" role="form" novalidate class="form-validation">
+						
 					</form>
 				</div>
 			</div>

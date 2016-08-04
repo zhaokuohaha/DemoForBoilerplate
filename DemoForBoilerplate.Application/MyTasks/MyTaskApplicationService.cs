@@ -57,9 +57,18 @@ namespace DemoForBoilerplate.MyTasks
 			{
 				myTask.AssignedPerson = _myPersonRepository.Load(input.AssignedPersonId.Value);
 			}
+			if (!String.IsNullOrEmpty(input.Decription))
+			{
+				myTask.Description = input.Decription;
+			}
 			//我们都不需要调用Update方法
 			//因为应用服务层的方法默认开启了工作单元模式（Unit of Work）
 			//ABP框架会工作单元完成时自动保存对实体的所有更改，除非有异常抛出。有异常时会自动回滚，因为工作单元默认开启数据库事务。
+		}
+
+		public string Test()
+		{
+			return "Api Test Success!";
 		}
 	}
 }

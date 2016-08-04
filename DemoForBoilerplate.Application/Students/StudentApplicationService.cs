@@ -45,7 +45,7 @@ namespace DemoForBoilerplate.Students
 		public AllClassInfo initClasses(int classNum)
 		{
 			AllClassInfo allClass = new AllClassInfo(classNum);
-			var res = _studentResopitory.GetAll().OrderBy(s => s.origin).ThenBy(s => s.sex).ThenBy(s => s.score).ToList();
+			var res = _studentResopitory.GetAll().OrderBy(s => s.origin).ThenBy(s => s.score).ThenBy(s => s.sex).ToList();
 			for(int i = 0; i < res.Count; i++)
 			{
 				allClass.allClass[i % classNum].Add(res[i]);

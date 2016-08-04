@@ -15,6 +15,7 @@ namespace DemoForBoilerplate.MyTasks.Dtos
 		[Range(1, int.MaxValue)]
 		public int TaskId { get; set; }
 		public	int ? AssignedPersonId { get; set; }
+		public string Decription { get; set; }
 		public MyTaskState ? State { get; set; }
 
 		//自定义验证，实现ICustomValidate 接口

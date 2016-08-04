@@ -36,8 +36,15 @@ namespace DemoForBoilerplate.Web.Controllers
 
 		public PartialViewResult CreateMyTask()
 		{
-			return PartialView("MyTask");
+			var people = _myPersonRepository.GetAllList();
+			return PartialView("MyTask",people);
 		}
 
+
+		public PartialViewResult EditTask(int id)
+		{
+			var task = _myTaskRepository.Get(id);
+			return PartialView(task);
+		}
 	}
 }

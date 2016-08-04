@@ -1,0 +1,55 @@
+﻿ @model DemoForBoilerplate.MyTasks.MyTask
+
+<div class="modal-header">
+	<h4 class="modal-title">
+		<span>@L("Edit")</span>
+	</h4>
+</div>
+<div class="modal-body">
+	<div class="form-group">
+		<label for="task">@L("Task")</label>
+		<input type="text" class="form-control"	id="task" value="@Model.Description" />
+	</div>
+	<div class="form-group">
+		<label for="state">@L("State")</label>
+		<input type="radio" id="state0" name="state" value="0" /> @L("Active")
+		<input type="radio" id="state1" name="state" value="1" /> @L("Completed")
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">@L("Cancel")</button>
+	<button type="submit" id="submitUpdate" class="btn btn-primary blue"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+</div>
+
+<script>
+	if("@Model.State" == "Completed"){
+		$('#state1').attr("checked","checked");
+	}else{
+		$('#state0').attr("checked","checked");
+	}
+	$('#submitUpdate').click(function () {
+		@*console.log(JSON.stringify({
+			AssignedPersonId: @Model.AssignedPersonId,
+			TaskId: @Model.Id,
+			Decription: $("#task").val(),
+			State: $('input[name=state]:checked').val()
+		}));*@
+		$.ajax({
+			url: "/api/services/app/MyTask/UpdateMyTask",
+			type: "post",
+			data:JSON.stringify({
+				AssignedPersonId: @Model.AssignedPersonId,
+				TaskId: @Model.Id,
+				Decription: $("#task").val(),
+				State: $('input[name=state]:checked').val()
+			}),
+			contentType:"application/json",
+			success: function (data) {
+				window.location.reload();
+			},
+			error: function (data) {
+				console.error(data);
+			}
+		})
+	});
+</script>
