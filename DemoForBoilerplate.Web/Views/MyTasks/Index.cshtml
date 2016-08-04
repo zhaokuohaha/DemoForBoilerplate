@@ -36,12 +36,12 @@
 							<td>@item.AssignedPersonName </td>
 							<td>@item.Description</td>
 							<td>@item.CreationTime</td>
-							<td>@item.State</td>
+							<td>@(@item.State == 0 ? @L("Active") : @L("Completed"))</td>
 							<td>
-								<div class="button-group">
-									@Ajax.ActionLink(L("Eidt"), "EditTask", new {id = item.Id }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ajaxmodal", OnComplete = "showModal" }, new { @class = "btn btn-primary" })
+								<div class="btn-group" role="group">
+									@Ajax.ActionLink(L("Edit"), "EditTask", new { id = item.Id }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ajaxmodal", OnComplete = "showModal" }, new { type="button", @class="btn btn-primary"})
 									@*@Ajax.ActionLink(L("Delete"),"DeleteTask","",new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId="ajaxmodel"}, new { @class = "btn btn-danger" })*@
-									<button class="btn btn-danger delete-task" onclick="deletetask(@item.Id)">@L("Delete")</button>
+									<button type="button" class="btn btn-danger delete-task" onclick="deletetask(@item.Id)">@L("Delete")</button>
 								</div>
 							</td>
 						</tr>

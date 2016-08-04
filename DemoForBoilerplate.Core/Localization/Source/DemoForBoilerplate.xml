@@ -63,6 +63,15 @@
     <text name="Optional" value="Optional" />
 
 			<text name="Student" value="Student" />
+
+			<text name="Edit" value="Edit" />
+			<text name="Delete" value="Delete" />
+			<text name="Task" value="Task" />
+			<text name="State" value="State" />
+			<text name="Active" value="Active" />
+			<text name="Completed" value="Completed" />
+			<text name="Delete Successful ! " value="Delete Successful ! " />
+			<text name="Operation" value="Operation" />
 		
   </texts>
 </localizationDictionary>

@@ -31,6 +31,14 @@
     <text name="LoginFailed" value="登录失败!" />
 
 			<text name="Student" value="学生" />
-    
+			
+			<text name="Edit" value="编辑" />
+			<text name="Delete" value="删除" />
+			<text name="Task" value="任务" />
+			<text name="State" value="状态" />
+			<text name="Active" value="进行中" />
+			<text name="Completed" value="已完成" />
+			<text name="Delete Successful ! " value="删除成功 ! " />
+			<text name="Operation" value="操作" />
   </texts>
 </localizationDictionary>
