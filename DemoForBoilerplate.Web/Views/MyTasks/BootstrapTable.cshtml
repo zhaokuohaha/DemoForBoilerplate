@@ -1,0 +1,64 @@
+﻿@{
+	ViewBag.Title = "BootstrapTable";
+}
+@section scripts{
+	<script src="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+	<!-- 可选项 -->
+	<!-- 中文语言 -->
+	<script src="http://cdn.bootcss.com/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+	<!-- 移动端自适应 -->
+	<script src="http://cdn.bootcss.com/bootstrap-table/1.11.0/extensions/mobile/bootstrap-table-mobile.min.js"></script>
+	<!-- 可编辑扩展 -->
+	<script src="http://cdn.bootcss.com/bootstrap-table/1.10.1/extensions/editable/bootstrap-table-editable.min.js"></script>
+	<script src="http://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+	<!-- 导出文件扩展 -->
+	<script src="http://cdn.bootcss.com/bootstrap-table/1.11.0/extensions/export/bootstrap-table-export.min.js"></script>
+	<script src="http://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+}
+@section styles{
+	<link href="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet">
+}
+<h1>Tasks For BootstrapTable</h1>
+
+
+<table id="table"
+	   data-classes="table table-striped table-hover"
+	   data-show-toggle="true"
+	   data-show-refresh="true"
+	   data-pagination="true"
+	   data-pagination-loop="false"
+	   data-page-size="5"
+	   data-page-list="[5,10,All]"
+	   data-search="true"
+	   data-search-on-enter-key="true"
+	   data-mobile-responsive="true"
+	   data-show-export="true">
+		
+	<thead>
+		<tr>
+			<th data-sortable="true" data-field="assignedPersonName">@L("Person")</th>
+			<th data-field="description">@L("Task Description")</th>
+			<th data-field="creationTime">@L("Creation Time")</th>
+			<th data-field="state">@L("Task State")</th>
+		</tr>
+	</thead>
+</table>
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+<script>
+	getdata();
+	function getdata() {
+		console.log("funtion in");
+		var data;
+		$.ajax({
+			url: "/api/services/app/MyTask/GetMyTaskForBtTable",
+			type:"post",
+			success: function (e) {
+				$("#table").bootstrapTable({
+					data: e.result.data
+				});
+			},
+		});
+		return data;
+	}
+</script>

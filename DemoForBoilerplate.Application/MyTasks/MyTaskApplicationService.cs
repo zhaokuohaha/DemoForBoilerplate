@@ -45,6 +45,23 @@ namespace DemoForBoilerplate.MyTasks
 			};
 		}
 
+		public 	GetMyTaskForBtTableOutput GetMyTaskForBtTable()
+		{
+			GetMyTaskForBtTableOutput output = new GetMyTaskForBtTableOutput();
+			try
+			{
+				var task = _myTaskRepository.GetAllWithPeople(null,null);
+				output.data = Mapper.Map<List<MyTaskDto>>(task);
+				output.Status = true;
+			}
+			catch(Exception ex)
+			{
+				output.Status = false;
+				output.Message = ex.StackTrace;
+			}
+			return output;
+		}
+
 		public void DeleteMyTask(DeleteMyTaskInput input)
 		{	
 			_myTaskRepository.Delete(input.Id);

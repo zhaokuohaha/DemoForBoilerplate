@@ -110,6 +110,7 @@
     <Compile Include="MyPeople\MyPersonAppService.cs" />
     <Compile Include="MyTasks\Dtos\CreattMyTaskInput.cs" />
     <Compile Include="MyTasks\Dtos\DeleteMyTaskInput.cs" />
+    <Compile Include="MyTasks\Dtos\GetMyTaskForBtTableOutput.cs" />
     <Compile Include="MyTasks\Dtos\GetMyTaskInput.cs" />
     <Compile Include="MyTasks\Dtos\GetMyTaskOutput.cs" />
     <Compile Include="MyTasks\Dtos\MyTaskDto.cs" />

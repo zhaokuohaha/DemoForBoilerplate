@@ -31,7 +31,7 @@ namespace DemoForBoilerplate.Web.Controllers
         public ActionResult Index()
         {
 			var myTasks = _myTaskAppService.GetMyTask(new MyTasks.Dtos.GetMyTaskInput());
-            return View(myTasks);
+            return View(myTasks);			
         }
 
 		public PartialViewResult CreateMyTask()
@@ -45,6 +45,18 @@ namespace DemoForBoilerplate.Web.Controllers
 		{
 			var task = _myTaskRepository.Get(id);
 			return PartialView(task);
+		}
+
+		public ViewResult BootstrapTable()
+		{
+			return View();
+		}
+
+		//[HttpPost]
+		public JsonResult GetDataForBootstrapTable()
+		{
+			var res = _myTaskAppService.GetMyTaskForBtTable();
+			return Json(res, JsonRequestBehavior.AllowGet);
 		}
 	}
 }

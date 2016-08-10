@@ -16,7 +16,19 @@
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<div class="panel-title">
-					<h2>@L("Task Management")</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<h2>
+								@L("Task Management")
+							</h2>
+						</div >
+						<div class="col-md-6 text-right">
+							<a href="@Url.Action("BootstrapTable")">
+								<button class="btn btn-info">BootStrapTable</button>
+							</a>
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<div class="panel-body">
@@ -39,8 +51,7 @@
 							<td>@(@item.State == 0 ? @L("Active") : @L("Completed"))</td>
 							<td>
 								<div class="btn-group" role="group">
-									@Ajax.ActionLink(L("Edit"), "EditTask", new { id = item.Id }, new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ajaxmodal", OnComplete = "showModal" }, new { type="button", @class="btn btn-primary"})
-									@*@Ajax.ActionLink(L("Delete"),"DeleteTask","",new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId="ajaxmodel"}, new { @class = "btn btn-danger" })*@
+									@Ajax.ActionLink(L("Edit"), "EditTask", new { controller = "MyTasks", id=@item.Id }, new AjaxOptions { UpdateTargetId = "ajaxmodal", InsertionMode = InsertionMode.Replace, HttpMethod = "get", OnComplete = "showModal" }, new { type="button", @class="btn btn-primary", style="text-decoration:none"})
 									<button type="button" class="btn btn-danger delete-task" onclick="deletetask(@item.Id)">@L("Delete")</button>
 								</div>
 							</td>
