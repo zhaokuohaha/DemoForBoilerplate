@@ -53,7 +53,6 @@ namespace DemoForBoilerplate.Web.Controllers
 		}
 
 		//[HttpPost]
-		[HttpGet]
 		public JsonResult GetDataForBootstrapTable()
 		{
 			var res = _myTaskAppService.GetMyTaskForBtTable();
